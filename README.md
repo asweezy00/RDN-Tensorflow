@@ -1,11 +1,10 @@
-# RDN-Tensorflow
+# Residual Dense Network (RDN) for Image Denoising and Super-Resolution (Tensorflow Implementation)
+
 TensorFlow Implementation of Residual Dense Network for Image Super-Resolution and Image Denoising (CVPR 2018)
-Heavily Based on Pytorch implementation found in: https://github.com/yjn870/RDN-pytorch
-<img width="1349" alt="image" src="https://github.com/user-attachments/assets/f50d80a5-6b75-43e0-9065-d2daec503eb6">
-<img width="1310" alt="image" src="https://github.com/user-attachments/assets/795b648c-0840-4e23-85fb-7ad1e8bb0c91">
+Based on Pytorch implementation found in: https://github.com/yjn870/RDN-pytorch
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/f50d80a5-6b75-43e0-9065-d2daec503eb6">
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/795b648c-0840-4e23-85fb-7ad1e8bb0c91">
 
-
-# Residual Dense Network (RDN) for Image Denoising and Super-Resolution
 
 ## Overview
 This repository contains an implementation of the Residual Dense Network (RDN) architecture using TensorFlow/Keras. The implementation supports both image denoising and super-resolution tasks, featuring dense connectivity, local and global feature fusion, and residual learning.
@@ -104,6 +103,11 @@ sr_model = build_rdn(
   - Growth rate
   - Number of layers per RDB
 - Consider reducing these parameters for memory-constrained environments
+
+## Citations
+Y. Zhang, Y. Tian, Y. Kong, B. Zhong, and Y. Fu, "Residual Dense Network for Image Super-Resolution," *Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)*, Salt Lake City, UT, USA, Jun. 2018, pp. 2472–2481, doi: 10.48550/arXiv.1802.08797.
+
+Y. Zhang, Y. Tian, Y. Kong, B. Zhong and Y. Fu, "Residual Dense Network for Image Restoration," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 7, pp. 2480-2495, 1 July 2021, doi: 10.1109/TPAMI.2020.2968521.
 
   
 ## Requirements
