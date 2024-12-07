@@ -2,8 +2,7 @@
 
 TensorFlow Implementation of Residual Dense Network for Image Super-Resolution and Image Denoising (CVPR 2018)
 Based on Pytorch implementation found in: https://github.com/yjn870/RDN-pytorch
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/f50d80a5-6b75-43e0-9065-d2daec503eb6">
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/795b648c-0840-4e23-85fb-7ad1e8bb0c91">
+
 
 
 ## Overview
@@ -49,7 +48,11 @@ The network consists of several key components:
 - Comprehensive model compilation setup
 
 ## Building Model 
+
 # For Denoising
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/795b648c-0840-4e23-85fb-7ad1e8bb0c91">
+
+```python
 denoising_model = build_rdn_denoising(
     input_shape=(64, 64, 1),
     num_features=64,
@@ -57,8 +60,12 @@ denoising_model = build_rdn_denoising(
     num_blocks=6,
     num_layers=6
 )
+```
 
 # For Super-Resolution
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/f50d80a5-6b75-43e0-9065-d2daec503eb6">
+
+```python
 sr_model = build_rdn(
     scale_factor=2,  # 1 for denoising, 2/3/4 for super-resolution
     input_shape=(64, 64, 1),
@@ -67,6 +74,7 @@ sr_model = build_rdn(
     num_blocks=6,
     num_layers=6
 )
+```
 
 ## Custom Metrics
 
