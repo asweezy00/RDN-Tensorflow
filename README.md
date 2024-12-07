@@ -3,6 +3,10 @@
 TensorFlow Implementation of Residual Dense Network for Image Super-Resolution and Image Denoising (CVPR 2018)
 Based on Pytorch implementation found in: https://github.com/yjn870/RDN-pytorch
 
+### Citations
+Y. Zhang, Y. Tian, Y. Kong, B. Zhong, and Y. Fu, "Residual Dense Network for Image Super-Resolution," *Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)*, Salt Lake City, UT, USA, Jun. 2018, pp. 2472–2481, doi: 10.48550/arXiv.1802.08797.
+
+Y. Zhang, Y. Tian, Y. Kong, B. Zhong and Y. Fu, "Residual Dense Network for Image Restoration," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 7, pp. 2480-2495, 1 July 2021, doi: 10.1109/TPAMI.2020.2968521.
 
 
 ## Overview
@@ -112,10 +116,7 @@ sr_model = build_rdn(
   - Number of layers per RDB
 - Consider reducing these parameters for memory-constrained environments
 
-## Citations
-Y. Zhang, Y. Tian, Y. Kong, B. Zhong, and Y. Fu, "Residual Dense Network for Image Super-Resolution," *Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)*, Salt Lake City, UT, USA, Jun. 2018, pp. 2472–2481, doi: 10.48550/arXiv.1802.08797.
 
-Y. Zhang, Y. Tian, Y. Kong, B. Zhong and Y. Fu, "Residual Dense Network for Image Restoration," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 7, pp. 2480-2495, 1 July 2021, doi: 10.1109/TPAMI.2020.2968521.
 
   
 ## Requirements
