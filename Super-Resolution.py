@@ -72,7 +72,7 @@ def build_rdn(scale_factor, input_shape=(None, None, 1), num_features=64, growth
     - model: Keras Model instance.
     """
 
-    # No longer restrict scale_factor to [2, 3, 4]
+    # Scale factor can be set to 1 hence no upscaling will occur
     if scale_factor not in [1, 2, 3, 4]:
         raise ValueError("scale_factor must be 1, 2, 3, or 4")
 
