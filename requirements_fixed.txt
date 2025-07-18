@@ -1,0 +1,26 @@
+# Fixed requirements with compatible versions
+# These versions are tested to work together without conflicts
+
+# Core ML/DL packages
+tensorflow==2.12.0
+numpy==1.23.5
+pandas==1.5.3
+
+# Image processing
+opencv-python>=4.7
+Pillow==9.5.0
+scikit-image==0.20.0
+
+# Scientific computing
+scipy==1.10.1
+
+# Configuration management
+PyYAML==6.0
+
+# Utilities
+tqdm==4.65.0
+matplotlib==3.7.1
+
+# Development tools (optional)
+jupyter==1.0.0
+notebook==6.5.2
