@@ -1,0 +1,55 @@
+checkpoint_dir: checkpoints
+data:
+  blur_kernel_size: 7
+  blur_sigma: 1.6
+  degradation_type: bicubic
+  image_formats:
+  - .jpg
+  - .jpeg
+  - .png
+  - .tiff
+  - .bmp
+  noise_level: 30.0
+  normalize: true
+  test_data_path: ''
+  train_data_path: ''
+  val_data_path: ''
+inference:
+  batch_size: 1
+  calculate_metrics: true
+  input_path: ''
+  model_path: ''
+  output_path: ''
+  overlap: 8
+  patch_size: 64
+  save_comparison: true
+log_dir: logs
+model:
+  growth_rate: 64
+  input_shape:
+  - null
+  - null
+  - 3
+  model_type: rdn
+  num_blocks: 6
+  num_features: 64
+  num_layers: 6
+  scale_factor: 2
+output_dir: outputs
+project_name: RDN_Project
+seed: 42
+training:
+  batch_size: 16
+  early_stopping: true
+  epochs: 200
+  horizontal_flip: true
+  learning_rate: 0.0001
+  loss: mae
+  max_val: 1.0
+  mode: max
+  monitor: val_psnr
+  patch_size: 32
+  patience: 10
+  rotation: true
+  validation_split: 0.1
+  vertical_flip: true
