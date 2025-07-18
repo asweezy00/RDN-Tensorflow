@@ -1,0 +1,38 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment
+.venv/
+env/
+*.env
+rdn_env/
+*.sh
+
+# TensorFlow & model outputs
+*.ckpt
+*.pb
+*.h5
+*.tflite
+*.log
+*.pth
+*.pt
+*.npy
+``
+# Jupyter and add .ipynb as well 
+.ipynb
+.ipynb_checkpoints/
+
+# System
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Outputs
+outputs/
+
+# Exclude old RDN-Tensorflow implementation
+RDN-Tensorflow/
