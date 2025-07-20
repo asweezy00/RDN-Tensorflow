@@ -1,5 +1,5 @@
 # Core dependencies
-tensorflow==2.15.0
+tensorflow==2.16.1
 numpy==1.24.4
 opencv-python==4.7.0.72
 Pillow==9.5.0
